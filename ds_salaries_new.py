@@ -20,7 +20,7 @@ except db.Error as e:
     #con.close()
 
 # omvandla valuta från USD till SEK samt skapa ny kolumn och loggfil
-API_KEY = "929ce405b668474ea251cb0f2cb4764b"  
+API_KEY = "Put your API-key information here"  
 
 def bail(message):
     logger.error(message)
@@ -85,16 +85,3 @@ if __name__ == "__main__":
 
 
 
-# df = pd.read_csv(r'C:\Users\kolcz\Documents\data_science_kunskapskontroll_3_salaries\ds_salaries.csv')
-
-# df.to_sql('ds_salaries', con, if_exists = 'replace', index=False)
-
-# print(df)
-
-# df.columns
- 
-# df['employee_residence'] = df['employee_residence'].replace({"ES": "Spain", "US": "United States", "CA": "Canada", "DE": "Germany", "GB": "Great Britain", "NG": "Nigeria", "IN": "India", "HK": "Hong Kong", "PT": "Portugal", "NL": "Netherlands", "CH": "Switzerland", "CF": "Central African Republic", "FI": "Finland", "UA": "Uruguay", "IE": "Republic of Ireland", "IL": "Israel", "GH": "Ghana", "AT": "Austria", "CO":"Colombia", "SG":"Singapore", "SE": "Sweden", "SI": "Slovenia", "MX": "Mexico", "UZ": "Uzbekistan", "HR": "Croatia", "PL": "Poland", "KW": "Kuwait", "VN": "Vietnam", "CY": "Cypern", "AR": "Argentina", "AM": "Armenia", "BA": "BosniaandHerzegovina", "KE": "Kenya", "GR": "Greece", "MK": "NorthMacedonia", "LV": "Latvia", "IT": "Italy", "MA": "Morocco", "LT": "Lithuania", "BE": "Belgium", "AS": "AmericanSamoa", "IR":"Iran", "HU": "Hungary", "SK": "Slovakia", "CN": "China", "CZ": "CzechRepublic", "CR": "CostaRica", "TR": "Turkey", "DK": "Denmark", "BO": "Bolivia", "PH": "Philippines", "DO": "DominicanRepublic", "EG": "Egypt", "ID": "Indonesia", "AE": "UnitedArabEmirates", "MY": "Malaysia", "JP": "Japan", "EE": "Estonia", "HN": "Honduras", "TN": "Tunisia", "IQ": "Iraq", "BG": "Bulgaria", "JE": "Jordanien", "RS": "Serbia", "NZ": "NewZealand", "MD": "Moldova", "LU": "Luxenbourg", "MT": "Malta"})
- 
-# new_df = df.to_sql("ds_salaries.csv", con, if_exists="replace")
- 
-# print(new_df)
